@@ -16,16 +16,16 @@ public class IslaiduIrasai extends Irasas {
 
     }
 
-    @Override
-    public String toString() {
-        return String.format("%s,%s,%s,%s,%s,%s,%s,%s",
-                id, piniguSuma,
-                kategorijosIndeksas,
-                data,
-                suvedimoLaikas,
-                papildomaInformacija,
-                atsiskaitymoBudas, kodas);
-    }
+//    @Override
+//    public String toString() {
+//        return String.format("%s,%s,%s,%s,%s,%s,%s,%s",
+//                id, piniguSuma,
+//                kategorijosIndeksas,
+//                data,
+//                suvedimoLaikas,
+//                papildomaInformacija,
+//                atsiskaitymoBudas, kodas);
+//    }
 //    @Override
 //    public String toString() {
 //

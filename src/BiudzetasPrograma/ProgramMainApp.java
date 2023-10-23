@@ -2,7 +2,9 @@ package BiudzetasPrograma;
 
 import BiudzetasPrograma.CanseN.*;
 
+import BiudzetasPrograma.Failai.PakeistiWriteToFile;
 import BiudzetasPrograma.Failai.ReadFile;
+import BiudzetasPrograma.Failai.WriteFile;
 import BiudzetasPrograma.IrasuKeitimas.KeistiIrasus;
 
 import java.io.BufferedReader;
@@ -21,18 +23,22 @@ public class ProgramMainApp {
 
         while (true) {
             System.out.println("========Pasirinkite ka norite daryti========");
-            System.out.println("\n 1.Ivesti pajamas," +
-                    " \n 2.Ivesti islaidas," +
-                    " \n 3.Irasu perziura," +
-                    " \n 4.Trinti irasa, " +
-                    " \n 5.Keisti irasus " +
-                    " \n 6.Paimti is failo informacija " +
-                    "\n 7.Pabaigti programa");
+            System.out.println("""
+                     1.Ivesti pajamas,\s
+                     2.Ivesti islaidas,\s
+                     3.Irasu perziura,\s
+                     4.Trinti irasa, \s
+                     5.Keisti irasus \s
+                     6.Paimti is failo informacija\s
+                     7. Balansas
+                     8.Pabaigti programa\
+                    """);
             int choice = scanner.nextInt();
             switch (choice) {
 
                 case 1:
                     Case1.case1(biudzetas, scanner);
+
                     break;
                 case 2:
                     Case2.case2(biudzetas, scanner);
@@ -46,28 +52,39 @@ public class ProgramMainApp {
                     System.out.println("=== Pasirinkite irasa kuri norite trinti? === ");
                     int idToDelete = scanner.nextInt();
                     Case4.deleteEnteredData(biudzetas.getIrasai(), idToDelete);
+                    WriteFile.fileOutGoing(biudzetas.getIrasai());
                     System.out.println("Irasas " + "idToDelete" + " istrintas");
                     System.out.println();
                     break;
                 case 5:
-                    System.out.println(biudzetas);
+                    PrintDuomenys.printBendraInfoSaskaitoje(biudzetas.getIrasai());
                     KeistiIrasus.koreguotiIrasus(biudzetas.getIrasai());
+                    WriteFile.fileOutGoing(biudzetas.getIrasai());
                     break;
                 case 6:
                     ReadFile.nuskaitytiIsFailo(biudzetas.getIrasai(),
                             biudzetas.getPajamuIrasai(),
                             biudzetas.getIslaiduIrasai());
+                    System.out.println("------Duomenys perkelti------");
+                    System.out.println();
+                    System.out.println();
+
                     break;
                 case 7:
-                    //  FileOut.fileOutGoing(biudzetas.getIrasai());
+                    System.out.println(biudzetas.bendrasBalansas());
+                    break;
+                case 8:
+
                     System.out.println("================================");
                     System.out.println("======= Programa baigiama ======");
                     System.out.println();
                     System.out.println("Exiting ......");
                     return;
 
-                case 8:
-                    AtnaujintiDuomenis.atnaujintiDuomenuFaila(biudzetas.getIrasai());
+                case 9:
+                    WriteFile.fileOutGoing(biudzetas.getIrasai());
+
+
             }
         }
     }

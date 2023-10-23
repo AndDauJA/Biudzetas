@@ -30,13 +30,22 @@ public class Case2 {
                 kategorijosIndeksas,
                 localDate,
                 papildomainfo, suvedimoLaikas, atsiskaitymoBudas, papildomasDuomuo);
-        biudzetas.pridetiIrasus(islaiduIrasai); //prideda irasus i duombaze ArrayList<Irasai>
+        biudzetas.pridetiIrasus(islaiduIrasai);
         biudzetas.pridetiIslaiduIrasus(islaiduIrasai);
         WriteFile.fileOutGoing(biudzetas.getIrasai());
 
         System.out.println("Isaugotas irasas: ");
-        System.out.println(islaiduIrasai);
-        ArrayList<Irasas> irasai = biudzetas.getIrasai(); // Get the list of Irasas objects from your Biudzetas
+        System.out.println();
+        System.out.printf("iraso id: %s, Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+                        " Papildoma informacija: %s, Atsiskaitymo budas: %s",
+                id, islaidos,
+                kategorijosIndeksas,
+                localDate,
+                suvedimoLaikas,
+                papildomainfo,
+                atsiskaitymoBudas);
+
+        ArrayList<Irasas> irasai = biudzetas.getIrasai();
         double totalExpence = TotalIslaiduSum.islaidosSum(irasai);
         System.out.println("viso islaidu: " + totalExpence);
     }

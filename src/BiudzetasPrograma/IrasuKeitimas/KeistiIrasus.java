@@ -1,5 +1,7 @@
 package BiudzetasPrograma.IrasuKeitimas;
 
+import BiudzetasPrograma.Biudzetas;
+import BiudzetasPrograma.Failai.WriteFile;
 import BiudzetasPrograma.Irasas;
 
 import java.util.List;
@@ -18,7 +20,9 @@ public class KeistiIrasus {
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    KeistiSumosIrasa.keiciamasSumosIrasas(irasai,irasoId,scanner);
+                    Biudzetas biudzetas=new Biudzetas();
+                    KeistiSumosIrasa.keiciamasSumosIrasas(irasai,irasoId,scanner, biudzetas);
+                    WriteFile.fileOutGoing(biudzetas.getIrasai());
                     break;
                 case 2:
                     KeistiIndeksoIrasa.keiciamasIndeksoIrasas(irasai, irasoId,scanner);
@@ -41,6 +45,7 @@ public class KeistiIrasus {
         }
 
     }
+
 }
 
 

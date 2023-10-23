@@ -3,6 +3,7 @@ package BiudzetasPrograma.CanseN;
 import BiudzetasPrograma.Biudzetas;
 import BiudzetasPrograma.IslaiduIrasai;
 import BiudzetasPrograma.PajamuIrasai;
+import BiudzetasPrograma.PrintDuomenys;
 
 import java.util.List;
 import java.util.Scanner;
@@ -19,23 +20,21 @@ public class Case3 {
                     "2. Islaidu irasai, \n" +
                     "3. Bendras informacija apie saskaitas \n" +
                     "4. Exit");
-            int choise =scanner.nextInt();
+            int choise = scanner.nextInt();
             switch (choise) {
                 case 1:
                     System.out.println("======Pajamu irasai======");
-                    List<PajamuIrasai> pajamuIrasai = biudzetas.getPajamuIrasai();
-                    System.out.println(pajamuIrasai);
+                    PrintDuomenys.printPajamos(biudzetas.getPajamuIrasai());
                     System.out.println();
                     break;
                 case 2:
                     System.out.println("======Islaidu irasai======");
-                    List<IslaiduIrasai> islaiduIrasai = biudzetas.getIslaiduIrasai();
-                    System.out.println(islaiduIrasai);
+                    PrintDuomenys.printIslaidos(biudzetas.getIslaiduIrasai());
                     System.out.println();
                     break;
                 case 3:
                     System.out.println("=======Bendra informacija saskaitoje========");
-                    System.out.println(biudzetas);
+                    PrintDuomenys.printBendraInfoSaskaitoje(biudzetas.getIrasai());
                     System.out.println();
                     break;
                 case 4:

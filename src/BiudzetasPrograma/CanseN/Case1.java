@@ -36,10 +36,19 @@ public class Case1 {
         WriteFile.fileOutGoing(biudzetas.getIrasai());
 
         System.out.println("Isaugotas irasas: ");
-        System.out.println(pajamuIrasai);
+        System.out.println();
+        System.out.printf("iraso id: %s, Pajamos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+                        " Papildoma informacija: %s, Atsiskaitymo budas: %s",
+                id, pajamos,
+                kategorijosIndeksas,
+                localDate,
+                suvedimoLaikas,
+                papildomainfo,
+                atsiskaitymoBudas);
+
         ArrayList<Irasas> irasai = biudzetas.getIrasai();
         double totalIncome = TotalPajamuSum.pajamosSum(irasai);
-        System.out.println("viso pajamu: " + totalIncome);
+        System.out.println("viso pajamu: " + totalIncome+"\u20AC");
 
     }
 

@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class ReadFile {
 
-    public static void nuskaitytiIsFailo(List<Irasas> duomenys,
+    public static void nuskaitytiIsFailo(ArrayList<Irasas> duomenys,
                                          ArrayList<PajamuIrasai> pajamDuomenys,
                                          ArrayList<IslaiduIrasai> islaidDuomenys) {
         try (var reader = new BufferedReader(new FileReader("./src/Irasai.txt"))) {

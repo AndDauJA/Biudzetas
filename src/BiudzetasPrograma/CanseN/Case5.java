@@ -2,11 +2,15 @@ package BiudzetasPrograma.CanseN;
 
 import BiudzetasPrograma.Biudzetas;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Case5 {
 
     public static void case5(Biudzetas biudzetas, Scanner scanner) {
+
+
+        System.out.println();
         System.out.println("======== Pasirinkite juri irasa norite keisti ========");
         while (true) {
             System.out.println(" =====Pasirinkimas spausdinti:===== \n" +

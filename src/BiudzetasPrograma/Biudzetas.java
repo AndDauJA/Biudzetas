@@ -75,24 +75,31 @@ public class Biudzetas {
         return islaiduIrasai;
     }
 
-//    @Override
-//    public String toString() {
-//        StringBuilder printResult = new StringBuilder();
-//        for (Irasas printIrasai : irasai) {
-//            printResult.append(String.format("{iraso Nr. %s, Suma Eurais: %s \u20AC, " +
-//                            "Kategorijos Indeksas: %s, " +
-//                            "Data: %s, " +
-//                            "Suvedimo laikas: %s, " +
-//                            "Atsiskaitymo budas: %s} \n",
-//                    printIrasai.getId(),
-//                    printIrasai.getPiniguSuma(),
-//                    printIrasai.getKategorijosIndeksas(),
-//                    printIrasai.getData(),
-//                    printIrasai.getSuvedimoLaikas(),
-//                    printIrasai.getAtsiskaitymoBudas()));
-//        }
-//        return printResult.toString();
-//    }
+    public double totalPajamos() {
+        double result = 0.0;
+        for (PajamuIrasai pajamuSuma : pajamuIrasai) {
+            double pajamos = pajamuSuma.getPiniguSuma();
+            result += pajamos;
+        }
+        return result;
+    }
+
+    public double totalIslaidu() {
+        double result = 0.0;
+        for (IslaiduIrasai islaiduSuma : islaiduIrasai) {
+            double islaidos = islaiduSuma.getPiniguSuma();
+            result += islaidos;
+        }
+        return result;
+    }
+
+    public double bendrasBalansas() {
+        double result;
+        result = totalPajamos() + totalIslaidu(); // pakestas
+        return result;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder printResult = new StringBuilder();
@@ -103,10 +110,11 @@ public class Biudzetas {
                     printIrasai.getKategorijosIndeksas(),
                     printIrasai.getData(),
                     printIrasai.getSuvedimoLaikas(),
-                    printIrasai.getAtsiskaitymoBudas(),printIrasai.getKodas()));
+                    printIrasai.getAtsiskaitymoBudas(), printIrasai.getKodas()));
         }
         return printResult.toString();
     }
+
     ;
 }
 

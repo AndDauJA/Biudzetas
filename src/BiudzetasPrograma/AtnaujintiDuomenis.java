@@ -6,9 +6,11 @@ import java.util.ArrayList;
 
 public class AtnaujintiDuomenis {
 
-    public static void atnaujintiDuomenuFaila(ArrayList<Irasas> irasai) {
+    public static void atnaujintiDuomenuFaila() {
 
-
-        WriteFile.fileOutGoing(irasai);
+        System.out.println();
+        //WriteFile.fileOutGoing(irasai);
     }
+
+
 }

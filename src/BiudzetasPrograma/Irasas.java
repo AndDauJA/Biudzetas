@@ -95,4 +95,10 @@ public class Irasas {
     public void setAtsiskaitymoBudas(String atsiskaitymoBudas) {
         this.atsiskaitymoBudas = atsiskaitymoBudas;
     }
+    @Override
+    public String toString() {
+        return String.format("%s,%s,%s,%s,%s,%s,%s,%s",
+                id, piniguSuma, kategorijosIndeksas, data, papildomaInformacija,
+                suvedimoLaikas, atsiskaitymoBudas, kodas);
+    }
 }
