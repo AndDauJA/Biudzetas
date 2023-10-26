@@ -19,7 +19,8 @@ public class KeistiSumosIrasa {
                 System.out.print("Koreguojama suma \n Iveskite suma:");
                 double correct = scanner.nextDouble();
                 irasas.setPiniguSuma(correct);
-            }break;
+                break;
+            }
         }
        //WriteFile.fileOutGoing(biudzetas.getIrasai());
     }

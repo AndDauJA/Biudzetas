@@ -3,7 +3,7 @@ package BiudzetasPrograma;
 import BiudzetasPrograma.Irasas;
 
 public class IslaiduIrasai extends Irasas {
-    String kodas = "is";
+    String kodasIslaida = "is";
 
     public IslaiduIrasai(int id, double piniguSuma,
                          String kategorijosIndeksas,

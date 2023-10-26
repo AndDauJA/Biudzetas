@@ -3,15 +3,17 @@ package BiudzetasPrograma;
 import BiudzetasPrograma.Irasas;
 
 public class PajamuIrasai extends Irasas {
-String kodas="p";
-    public PajamuIrasai(int id, double piniguSuma,
+    String kodasPajama="p";
+    private static int id;
+
+    public PajamuIrasai(double piniguSuma,
                         String kategorijosIndeksas,
                         String data,
                         String papildomaInformacija,
                         String suvedimoLaikas,
                         String atsiskaitymoBudas,
                         String kodas) {
-        super(id, piniguSuma,
+        super(id++, piniguSuma,
                 kategorijosIndeksas,
                 data,
                 papildomaInformacija,

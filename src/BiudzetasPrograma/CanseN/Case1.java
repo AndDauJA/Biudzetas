@@ -11,7 +11,7 @@ public class Case1 {
     public static void case1(Biudzetas biudzetas, Scanner scanner) {
         WriteFile faileOut = new WriteFile();
         System.out.println("iveskite pajamas: ");
-        int id = 1;
+//        int id = 1;
         float pajamos = scanner.nextFloat();
         scanner.nextLine();
         System.out.println("iveskite kategorijos indeksa");
@@ -24,22 +24,22 @@ public class Case1 {
         String suvedimoLaikas = scanner.nextLine();
         System.out.println("iveskite atsiskaitymo buda");
         String atsiskaitymoBudas = scanner.nextLine();
-        String papildomasDuomuo ="p";
+        String papildomasDuomuo = "p";
 
         PajamuIrasai pajamuIrasai = new PajamuIrasai(
-                id, pajamos,
+                pajamos,
                 kategorijosIndeksas,
                 localDate,
-                papildomainfo, suvedimoLaikas, atsiskaitymoBudas,papildomasDuomuo);
+                papildomainfo, suvedimoLaikas, atsiskaitymoBudas, papildomasDuomuo);
         biudzetas.pridetiIrasus(pajamuIrasai); //prideda irasus i duombaze ArrayList<Irasai>
         biudzetas.pridetiPajamuIrasus(pajamuIrasai);
         WriteFile.fileOutGoing(biudzetas.getIrasai());
 
         System.out.println("Isaugotas irasas: ");
         System.out.println();
-        System.out.printf("iraso id: %s, Pajamos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+        System.out.printf("iraso id:, Pajamos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
                         " Papildoma informacija: %s, Atsiskaitymo budas: %s",
-                id, pajamos,
+                 pajamos,
                 kategorijosIndeksas,
                 localDate,
                 suvedimoLaikas,
@@ -48,7 +48,7 @@ public class Case1 {
 
         ArrayList<Irasas> irasai = biudzetas.getIrasai();
         double totalIncome = TotalPajamuSum.pajamosSum(irasai);
-        System.out.println("viso pajamu: " + totalIncome+"\u20AC");
+        System.out.println("viso pajamu: " + totalIncome + "\u20AC");
 
     }
 

@@ -6,6 +6,7 @@ import BiudzetasPrograma.Failai.PakeistiWriteToFile;
 import BiudzetasPrograma.Failai.ReadFile;
 import BiudzetasPrograma.Failai.WriteFile;
 import BiudzetasPrograma.IrasuKeitimas.KeistiIrasus;
+import BiudzetasPrograma.PrintAll.PrintLn;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -15,24 +16,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
+
 public class ProgramMainApp {
 
     public static void main(String[] args) {
         Biudzetas biudzetas = new Biudzetas();
+        ArrayList<Irasas> irasas = new ArrayList<>();
+
+
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.println("========Pasirinkite ka norite daryti========");
-            System.out.println("""
-                     1.Ivesti pajamas,\s
-                     2.Ivesti islaidas,\s
-                     3.Irasu perziura,\s
-                     4.Trinti irasa, \s
-                     5.Keisti irasus \s
-                     6.Paimti is failo informacija\s
-                     7. Balansas
-                     8.Pabaigti programa\
-                    """);
+            System.out.println("1.Ivesti pajamas,\s " +
+                    "2.Ivesti islaidas,\s" +
+                    "3.Irasu perziura,\s " +
+                    "4.Trinti irasa, \s" +
+                    "5.Keisti irasus \s" +
+                    "6.Paimti is failo informacija\s" +
+                    "7. Balansas\s" +
+                    "8.Pabaigti programa\n");
             int choice = scanner.nextInt();
             switch (choice) {
 
@@ -44,7 +48,8 @@ public class ProgramMainApp {
                     Case2.case2(biudzetas, scanner);
                     break;
                 case 3:
-                    Case3.case3(biudzetas, scanner);
+                    Case3.case3(biudzetas, scanner, irasas);
+                    print("000");
                     break;
                 case 4:
                     System.out.println(biudzetas);
@@ -57,7 +62,7 @@ public class ProgramMainApp {
                     System.out.println();
                     break;
                 case 5:
-                    PrintDuomenys.printBendraInfoSaskaitoje(biudzetas.getIrasai());
+                    PrintDuomenys.printBendraInfoSaskaitoje();
                     KeistiIrasus.koreguotiIrasus(biudzetas.getIrasai());
                     WriteFile.fileOutGoing(biudzetas.getIrasai());
                     break;

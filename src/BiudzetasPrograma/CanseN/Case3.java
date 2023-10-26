@@ -1,18 +1,16 @@
 package BiudzetasPrograma.CanseN;
 
-import BiudzetasPrograma.Biudzetas;
-import BiudzetasPrograma.IslaiduIrasai;
-import BiudzetasPrograma.PajamuIrasai;
-import BiudzetasPrograma.PrintDuomenys;
+import BiudzetasPrograma.*;
 
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Case3 {
 
 
-    public static void case3(Biudzetas biudzetas, Scanner scanner) {
+    public static void case3(Biudzetas biudzetas, Scanner scanner, ArrayList<Irasas> irasas) {
         System.out.println("======== Pasirinkite is meniu ========");
+
 
         while (true) {
             System.out.println(" Pasirinkimas spausdinti: \n" +
@@ -24,12 +22,13 @@ public class Case3 {
             switch (choise) {
                 case 1:
                     System.out.println("======Pajamu irasai======");
-                    PrintDuomenys.printPajamos(biudzetas.getPajamuIrasai());
+                    //PrintDuomenys.printPajamos(biudzetas.getPajamuIrasai());
+                    PrintDuomenys.printBendraInfoSaskaitoje(irasas);
                     System.out.println();
                     break;
                 case 2:
                     System.out.println("======Islaidu irasai======");
-                    PrintDuomenys.printIslaidos(biudzetas.getIslaiduIrasai());
+                    //PrintDuomenys.printIslaidos(biudzetas.getIslaiduIrasai());
                     System.out.println();
                     break;
                 case 3:

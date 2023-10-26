@@ -1,15 +1,15 @@
 package BiudzetasPrograma;
 
-public class Irasas {
+public abstract class Irasas {
 
-    int id;
-    double piniguSuma;
-    String kategorijosIndeksas; //alga, investicija,
-    String data; //local date
-    String suvedimoLaikas;
-    String atsiskaitymoBudas;
-    String papildomaInformacija;
-    String kodas;
+    private int id; //ir kitus
+    private double piniguSuma;
+    private String kategorijosIndeksas; //alga, investicija,
+    private String data; //local date
+    private String suvedimoLaikas;
+    private  String atsiskaitymoBudas;
+    private  String papildomaInformacija;
+    private String kodas;
 
     public String getKodas() {
         return kodas;
