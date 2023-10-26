@@ -1,8 +1,6 @@
 package BiudzetasPrograma;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Biudzetas {
 
@@ -56,19 +54,21 @@ public class Biudzetas {
 
     public double totalPajamos() {
         double result = 0.0;
-        for (PajamuIrasai pajamuSuma : pajamuIrasai) {
-            double pajamos = pajamuSuma.getPiniguSuma();
-            result += pajamos;
-        }
+        var result=TotalPajamuSum.pajamosSum(irasai);
+//        for (PajamuIrasai pajamuSuma : pajamuIrasai) {
+//            double pajamos = pajamuSuma.getPiniguSuma();
+//            result += pajamos;
+//        }
         return result;
     }
 
     public double totalIslaidu() {
         double result = 0.0;
-        for (IslaiduIrasai islaiduSuma : islaiduIrasai) {
-            double islaidos = islaiduSuma.getPiniguSuma();
-            result += islaidos;
-        }
+        var result=TotalIslaiduSum.islaidosSum(irasai);
+//        for (IslaiduIrasai islaiduSuma : islaiduIrasai) {
+//            double islaidos = islaiduSuma.getPiniguSuma();
+//            result += islaidos;
+//        }
         return result;
     }
 

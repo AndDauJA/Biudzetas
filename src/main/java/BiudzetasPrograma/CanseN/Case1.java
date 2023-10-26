@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Case1 {
 
     public static void case1(Biudzetas biudzetas, Scanner scanner) {
-        WriteFile faileOut = new WriteFile();
+       // WriteFile faileOut = new WriteFile();
         System.out.println("iveskite pajamas: ");
 //        int id = 1;
         float pajamos = scanner.nextFloat();
@@ -38,13 +38,13 @@ public class Case1 {
         System.out.println("Isaugotas irasas: ");
         System.out.println();
         System.out.printf("iraso id:, Pajamos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
-                        " Papildoma informacija: %s, Atsiskaitymo budas: %s",
-                 pajamos,
+                        " Papildoma informacija: %s, Atsiskaitymo budas: %s, domuo %s",
+                pajamos,
                 kategorijosIndeksas,
                 localDate,
                 suvedimoLaikas,
                 papildomainfo,
-                atsiskaitymoBudas);
+                atsiskaitymoBudas,"p");
 
         ArrayList<Irasas> irasai = biudzetas.getIrasai();
         double totalIncome = TotalPajamuSum.pajamosSum(irasai);

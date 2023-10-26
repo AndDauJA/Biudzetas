@@ -1,19 +1,15 @@
 package BiudzetasPrograma;
 
-import BiudzetasPrograma.CanseN.*;
-
-import BiudzetasPrograma.Failai.PakeistiWriteToFile;
+import BiudzetasPrograma.CanseN.Case1;
+import BiudzetasPrograma.CanseN.Case2;
+import BiudzetasPrograma.CanseN.Case3;
+import BiudzetasPrograma.CanseN.Case4;
 import BiudzetasPrograma.Failai.ReadFile;
 import BiudzetasPrograma.Failai.WriteFile;
 import BiudzetasPrograma.IrasuKeitimas.KeistiIrasus;
-import BiudzetasPrograma.PrintAll.PrintLn;
+import BiudzetasPrograma.PrintAll.PrintDuomenys;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
@@ -62,14 +58,12 @@ public class ProgramMainApp {
                     System.out.println();
                     break;
                 case 5:
-                    PrintDuomenys.printBendraInfoSaskaitoje();
+                    PrintDuomenys.printBendraInfoSaskaitoje(biudzetas.getIrasai());
                     KeistiIrasus.koreguotiIrasus(biudzetas.getIrasai());
                     WriteFile.fileOutGoing(biudzetas.getIrasai());
                     break;
                 case 6:
-                    ReadFile.nuskaitytiIsFailo(biudzetas.getIrasai(),
-                            biudzetas.getPajamuIrasai(),
-                            biudzetas.getIslaiduIrasai());
+                    ReadFile.nuskaitytiIsFailo(biudzetas.getIrasai());
                     System.out.println("------Duomenys perkelti------");
                     System.out.println();
                     System.out.println();

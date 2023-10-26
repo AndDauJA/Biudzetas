@@ -1,6 +1,5 @@
 package BiudzetasPrograma;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TotalPajamuSum {

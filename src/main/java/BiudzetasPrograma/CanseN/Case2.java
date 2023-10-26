@@ -26,7 +26,7 @@ public class Case2 {
         String papildomasDuomuo = "is";
 
         IslaiduIrasai islaiduIrasai = new IslaiduIrasai(
-                id, islaidos,
+                islaidos,
                 kategorijosIndeksas,
                 localDate,
                 papildomainfo, suvedimoLaikas, atsiskaitymoBudas, papildomasDuomuo);
@@ -36,7 +36,7 @@ public class Case2 {
 
         System.out.println("Isaugotas irasas: ");
         System.out.println();
-        System.out.printf("iraso id: %s, Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+        System.out.printf("iraso id: %s, Suman pinigu: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
                         " Papildoma informacija: %s, Atsiskaitymo budas: %s",
                 id, islaidos,
                 kategorijosIndeksas,
