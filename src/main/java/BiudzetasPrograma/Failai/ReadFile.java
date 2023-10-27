@@ -4,7 +4,10 @@ import BiudzetasPrograma.Biudzetas;
 import BiudzetasPrograma.Irasas;
 import BiudzetasPrograma.IslaiduIrasai;
 import BiudzetasPrograma.PajamuIrasai;
-
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
+import java.time.DateTimeException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -20,35 +23,45 @@ public class ReadFile {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] tokens = line.split(",");
+                if (tokens.length < 8) {
+                    System.err.println("Invalid line: " + line);
+                    continue;
+                }
                 Irasas irasas = null;
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                try {
+                    LocalDate date = LocalDate.parse(tokens[3], formatter);
 
-                if (line != null && line.contains("p")) {
-                    irasas = new PajamuIrasai(
-                            Float.parseFloat(tokens[1]),
-                            tokens[2],
-                            tokens[3],
-                            tokens[4],
-                            tokens[5],
-                            tokens[6],
-                            tokens[7]
-                    );
-                } else if (line != null && line.contains("is")) {
-                    irasas = new IslaiduIrasai(
-                            Float.parseFloat(tokens[1]),
-                            tokens[2],
-                            tokens[3],
-                            tokens[4],
-                            tokens[5],
-                            tokens[6],
-                            tokens[7]
-                    );
+                    if (line != null && line.contains("p")) {
+                        irasas = new PajamuIrasai(
+                                Double.parseDouble(tokens[1]),
+                                tokens[2],
+                                date,
+                                tokens[3],
+                                tokens[5],
+                                tokens[6],
+                                tokens[7]
+                        );
+                    } else if (line != null && line.contains("is")) {
+                        irasas = new IslaiduIrasai(
+                                Double.parseDouble(tokens[1]),
+                                tokens[2],
+                                date,
+                                tokens[3],
+                                tokens[5],
+                                tokens[6],
+                                tokens[7]
+                        );
+                    }
+                }catch (DateTimeException e){
+                    print("Neteisingas Datos formatas:"+line);
                 }
                 if (irasas != null) {
                     duomenys.add(irasas);
                 }
             }
             String printOut = reader.lines().toList().toString();
-            System.out.println(printOut);
+            print(printOut);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {

@@ -1,39 +1,34 @@
 package BiudzetasPrograma;
 
-public abstract class Irasas {
+import java.time.LocalDate;
 
+public abstract class Irasas {
+    private static int nextId = 0;
     private int id; //ir kitus
     private double piniguSuma;
     private String kategorijosIndeksas; //alga, investicija,
-    private String data; //local date
+    private LocalDate data; //local date
     private String suvedimoLaikas;
-    private  String atsiskaitymoBudas;
-    private  String papildomaInformacija;
+    private String atsiskaitymoBudas;
+    private String papildomaInformacija;
     private String kodas;
 
-    public String getKodas() {
-        return kodas;
-    }
 
-    public void setKodas(String kodas) {
-        this.kodas = kodas;
-    }
-
-    public Irasas(int id, double piniguSuma,
+    public Irasas(double piniguSuma,
                   String kategorijosIndeksas,
-                  String data,
                   String papildomaInformacija,
+                  LocalDate data,
                   String suvedimoLaikas,
                   String atsiskaitymoBudas,
                   String kodas) {
-        this.id = id;
         this.piniguSuma = piniguSuma;
         this.kategorijosIndeksas = kategorijosIndeksas;
-        this.data = data;
         this.papildomaInformacija = papildomaInformacija;
+        this.data = data;
         this.suvedimoLaikas = suvedimoLaikas;
         this.atsiskaitymoBudas = atsiskaitymoBudas;
-        this.kodas=kodas;
+        this.kodas = kodas;
+        this.id = nextId++;
     }
 
     public int getId() {
@@ -61,22 +56,22 @@ public abstract class Irasas {
 
     public void setKategorijosIndeksas(String kategorijosIndeksas) {
 
-        this.kategorijosIndeksas= kategorijosIndeksas;
+        this.kategorijosIndeksas = kategorijosIndeksas;
     }
 
-    public String getData() {
+    public LocalDate getData() {
         return data;
     }
 
     public void setData(String data) {
-        this.data = data;
+        this.data = LocalDate.parse(data);
     }
 
     public String getPapildomaInformacija() {
         return papildomaInformacija;
     }
 
-    public void setPapildomaInformacija (String papildomaInformacija) {
+    public void setPapildomaInformacija(String papildomaInformacija) {
         this.papildomaInformacija = papildomaInformacija;
     }
 
@@ -95,6 +90,24 @@ public abstract class Irasas {
     public void setAtsiskaitymoBudas(String atsiskaitymoBudas) {
         this.atsiskaitymoBudas = atsiskaitymoBudas;
     }
+
+    public String getKodas() {
+        return kodas;
+    }
+
+    public void setKodas(String kodas) {
+        this.kodas = kodas;
+    }
+
+    public void setDataIrasas(String data) {
+        if (data == null || data.trim().isEmpty()) {
+            System.out.println("Warning: Date is empty or null. Setting default date or handling as required.");
+            this.data = LocalDate.now(); // Setting to current date as an example
+        } else {
+            this.data = LocalDate.parse(data);
+        }
+    }
+
     @Override
     public String toString() {
         return String.format("%s,%s,%s,%s,%s,%s,%s,%s",

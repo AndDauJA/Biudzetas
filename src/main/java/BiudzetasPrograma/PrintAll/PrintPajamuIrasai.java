@@ -4,6 +4,8 @@ import BiudzetasPrograma.Irasas;
 import BiudzetasPrograma.TotalPajamuSum;
 
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class PrintPajamuIrasai {
@@ -14,7 +16,7 @@ public class PrintPajamuIrasai {
             int id = printPajIrasai.getId();
             double piniguSuma = printPajIrasai.getPiniguSuma();
             String kategorijosIndeksas = printPajIrasai.getKategorijosIndeksas();
-            String data = printPajIrasai.getData();
+            LocalDate data = printPajIrasai.getData();
             String suvedimoLaikas = printPajIrasai.getSuvedimoLaikas();
             String papildomaInformacija = printPajIrasai.getPapildomaInformacija();
             String atsiskaitymoBudas = printPajIrasai.getAtsiskaitymoBudas();

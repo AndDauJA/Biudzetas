@@ -3,6 +3,7 @@ package BiudzetasPrograma.PrintAll;
 import BiudzetasPrograma.Irasas;
 import BiudzetasPrograma.TotalIslaiduSum;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class PrintIslaiduIrasai {
@@ -12,7 +13,7 @@ public class PrintIslaiduIrasai {
             int id = printIslIrasai.getId();
             double piniguSuma = printIslIrasai.getPiniguSuma();
             String kategorijosIndeksas = printIslIrasai.getKategorijosIndeksas();
-            String data = printIslIrasai.getData();
+            LocalDate data = printIslIrasai.getData();
             String suvedimoLaikas = printIslIrasai.getSuvedimoLaikas();
             String papildomaInformacija = printIslIrasai.getPapildomaInformacija();
             String atsiskaitymoBudas = printIslIrasai.getAtsiskaitymoBudas();

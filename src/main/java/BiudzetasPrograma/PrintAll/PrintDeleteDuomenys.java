@@ -2,6 +2,7 @@ package BiudzetasPrograma.PrintAll;
 
 import BiudzetasPrograma.Irasas;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class PrintDeleteDuomenys {
@@ -11,7 +12,7 @@ public class PrintDeleteDuomenys {
             int id = bendriIrasai.getId();
             double piniguSuma = bendriIrasai.getPiniguSuma();
             String kategorijosIndeksas = bendriIrasai.getKategorijosIndeksas();
-            String data = bendriIrasai.getData();
+            LocalDate data = bendriIrasai.getData();
             String suvedimoLaikas = bendriIrasai.getSuvedimoLaikas();
             String papildomaInformacija = bendriIrasai.getPapildomaInformacija();
             String atsiskaitymoBudas = bendriIrasai.getAtsiskaitymoBudas();

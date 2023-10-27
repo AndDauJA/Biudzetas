@@ -2,7 +2,9 @@ package BiudzetasPrograma.PrintAll;
 
 import BiudzetasPrograma.Irasas;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class PrintDuomenys {
     public static void printBendraInfoSaskaitoje(ArrayList<Irasas> irasas) {
@@ -11,7 +13,7 @@ public class PrintDuomenys {
             int id = bendriIrasai.getId();
             double piniguSuma = bendriIrasai.getPiniguSuma();
             String kategorijosIndeksas = bendriIrasai.getKategorijosIndeksas();
-            String data = bendriIrasai.getData();
+            LocalDate data = bendriIrasai.getData();
             String suvedimoLaikas = bendriIrasai.getSuvedimoLaikas();
             String papildomaInformacija = bendriIrasai.getPapildomaInformacija();
             String atsiskaitymoBudas = bendriIrasai.getAtsiskaitymoBudas();
@@ -45,7 +47,7 @@ public class PrintDuomenys {
             int id = bendriIrasai.getId();
             double piniguSuma = bendriIrasai.getPiniguSuma();
             String kategorijosIndeksas = bendriIrasai.getKategorijosIndeksas();
-            String data = bendriIrasai.getData();
+            LocalDate data = bendriIrasai.getData();
             String suvedimoLaikas = bendriIrasai.getSuvedimoLaikas();
             String papildomaInformacija = bendriIrasai.getPapildomaInformacija();
             String atsiskaitymoBudas = bendriIrasai.getAtsiskaitymoBudas();

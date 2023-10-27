@@ -1,17 +1,25 @@
 package BiudzetasPrograma;
 
+import java.time.LocalDate;
+
 public class IslaiduIrasai extends Irasas {
+    private static LocalDate data;
     String kodasIslaida = "is";
-    private static int id;
 
     public IslaiduIrasai(double piniguSuma,
                          String kategorijosIndeksas,
-                         String data,
+                         LocalDate data,
                          String papildomaInformacija,
                          String suvedimoLaikas,
                          String atsiskaitymoBudas,
                          String kodas) {
-        super(id++, piniguSuma, kategorijosIndeksas, data, papildomaInformacija, suvedimoLaikas, atsiskaitymoBudas, kodas);
+        super(piniguSuma,
+                kategorijosIndeksas,
+                papildomaInformacija,
+                data,
+                suvedimoLaikas,
+                atsiskaitymoBudas, kodas);
+
 
     }
 }

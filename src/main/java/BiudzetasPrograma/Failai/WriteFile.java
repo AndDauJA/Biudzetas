@@ -12,16 +12,7 @@ public class WriteFile {
 
         try {
             var writer = new BufferedWriter(new FileWriter("./src/Irasai.txt", false));
-//            if (!irasas.isEmpty()) {
-//                writer.newLine();
-//                for (Irasas enterLine : irasas) {
-//                    writer.write(enterLine.toString());
-//                    writer.newLine();
-//                }
-//                writer.flush();
-//                writer.close();
-//                System.out.println();
-//            } else {
+//
             for (Irasas enterLine : irasas) {
                 writer.write(enterLine.toString());
                 writer.newLine();

@@ -3,6 +3,8 @@ package BiudzetasPrograma.CanseN;
 import BiudzetasPrograma.*;
 import BiudzetasPrograma.Failai.WriteFile;
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,13 +13,17 @@ public class Case1 {
     public static void case1(Biudzetas biudzetas, Scanner scanner) {
        // WriteFile faileOut = new WriteFile();
         System.out.println("iveskite pajamas: ");
-//        int id = 1;
-        float pajamos = scanner.nextFloat();
+        //int id = 0;
+        double pajamos = scanner.nextDouble();
         scanner.nextLine();
         print("iveskite kategorijos indeksa");
         String kategorijosIndeksas = scanner.nextLine();
-        print("iveskite data");
-        String localDate = scanner.nextLine();
+//        print("iveskite data");
+//        String localDate = scanner.nextLine();
+        print("iveskite data (yyyy-MM-dd)");
+        String dateInput = scanner.nextLine();
+        LocalDate localDate = LocalDate.parse(dateInput);
+
         print("iveskite papildoma info");
         String papildomainfo = scanner.nextLine();
         print("iveskite suvedimo laika");
@@ -29,8 +35,7 @@ public class Case1 {
         PajamuIrasai pajamuIrasai = new PajamuIrasai(
                 pajamos,
                 kategorijosIndeksas,
-                localDate,
-                papildomainfo, suvedimoLaikas, atsiskaitymoBudas, papildomasDuomuo);
+                localDate,papildomainfo, suvedimoLaikas, atsiskaitymoBudas, papildomasDuomuo);
         biudzetas.pridetiIrasus(pajamuIrasai); //prideda irasus i duombaze ArrayList<Irasai>
         biudzetas.pridetiPajamuIrasus(pajamuIrasai);
         WriteFile.fileOutGoing(biudzetas.getIrasai());

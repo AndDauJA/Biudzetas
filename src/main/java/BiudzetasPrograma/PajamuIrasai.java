@@ -1,20 +1,22 @@
 package BiudzetasPrograma;
 
+import java.time.LocalDate;
+
 public class PajamuIrasai extends Irasas {
+    private static  LocalDate data;
     String kodasPajama = "p";
-    private static int id;
 
     public PajamuIrasai(double piniguSuma,
                         String kategorijosIndeksas,
-                        String data,
+                        LocalDate data,
                         String papildomaInformacija,
                         String suvedimoLaikas,
                         String atsiskaitymoBudas,
                         String kodas) {
-        super(id++, piniguSuma,
+        super(piniguSuma,
                 kategorijosIndeksas,
-                data,
                 papildomaInformacija,
+                data,
                 suvedimoLaikas,
                 atsiskaitymoBudas, kodas);
 
