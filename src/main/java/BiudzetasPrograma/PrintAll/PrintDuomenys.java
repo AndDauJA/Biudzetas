@@ -18,7 +18,7 @@ public class PrintDuomenys {
             String kodas = bendriIrasai.getKodas();
             if (kodas.equals("p")) {
                 System.out.printf("Pajamu irasai \n Iraso id: %s, Suma pinigu: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
-                                " Papildoma informacija: %s, Atsiskaitymo budas: %s, %s%n",
+                                " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
                         id, piniguSuma,
                         kategorijosIndeksas,
                         data,
@@ -27,7 +27,7 @@ public class PrintDuomenys {
                         atsiskaitymoBudas, kodas);
             } else if (kodas.equals("is")) {
                 System.out.printf("Islaidu irasai \n Iraso id: %s, Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
-                                " Papildoma informacija: %s, Atsiskaitymo budas: %s, %s%n",
+                                " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
                         id, piniguSuma,
                         kategorijosIndeksas,
                         data,

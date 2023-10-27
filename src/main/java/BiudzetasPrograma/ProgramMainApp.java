@@ -25,13 +25,13 @@ public class ProgramMainApp {
 
         while (true) {
             System.out.println("========Pasirinkite ka norite daryti========");
-            System.out.println("1.Ivesti pajamas,\s " +
-                    "2.Ivesti islaidas,\s" +
-                    "3.Irasu perziura,\s " +
-                    "4.Trinti irasa, \s" +
-                    "5.Keisti irasus \s" +
-                    "6.Paimti is failo informacija\s" +
-                    "7. Balansas\s" +
+            System.out.println("1.Ivesti pajamas,\n " +
+                    "2.Ivesti islaidas,\n" +
+                    "3.Irasu perziura,\n " +
+                    "4.Trinti irasa, \n" +
+                    "5.Keisti irasus, \n" +
+                    "6.Paimti is failo informacija, \n" +
+                    "7. Balansas,\n" +
                     "8.Pabaigti programa\n");
             int choice = scanner.nextInt();
             switch (choice) {

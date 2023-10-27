@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef7d1d25-ee8c-4dc3-84c7-7f6edcc6053e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/Biudzetas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/CanseN/Bandymai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/CanseN/Case1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/CanseN/Case2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/CanseN/Case3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/CanseN/Case4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/CanseN/Case5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/Failai/WriteFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/Irasas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/IrasuKeitimas/KeistiDatosIrasa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/IrasuKeitimas/KeistiIndeksoIrasa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/IrasuKeitimas/KeistiIrasus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/IrasuKeitimas/KeistiSumosIrasa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/IslaiduIrasai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/PajamuIrasai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/ProgramMainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/TotalIslaiduSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/BiudzetasPrograma/TotalPajamuSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BIUDZETASv2/Irasai.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Biudzetas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Biudzetas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintDuomenys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintDuomenys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/ProgramMainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/ProgramMainApp.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2XKkn7GfzNhGlRToRUzCHjJBTM6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef7d1d25-ee8c-4dc3-84c7-7f6edcc6053e" name="Changes" comment="" />
+      <created>1698385324588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698385324588</updated>
+    </task>
+    <servers />
+  </component>
+</project>

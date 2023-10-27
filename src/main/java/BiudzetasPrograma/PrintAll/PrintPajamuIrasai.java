@@ -31,6 +31,7 @@ public class PrintPajamuIrasai {
             }
         }
         double totalIncome = TotalPajamuSum.pajamosSum(pajamuIrasas);
+        System.out.println();
         System.out.println("viso pajamu: " + totalIncome + "\u20AC");
     }
 }

@@ -53,7 +53,7 @@ public class Biudzetas {
     }
 
     public double totalPajamos() {
-        double result = 0.0;
+        //double result = 0.0;
         var result=TotalPajamuSum.pajamosSum(irasai);
 //        for (PajamuIrasai pajamuSuma : pajamuIrasai) {
 //            double pajamos = pajamuSuma.getPiniguSuma();
@@ -63,7 +63,7 @@ public class Biudzetas {
     }
 
     public double totalIslaidu() {
-        double result = 0.0;
+        //double result = 0.0;
         var result=TotalIslaiduSum.islaidosSum(irasai);
 //        for (IslaiduIrasai islaiduSuma : islaiduIrasai) {
 //            double islaidos = islaiduSuma.getPiniguSuma();
