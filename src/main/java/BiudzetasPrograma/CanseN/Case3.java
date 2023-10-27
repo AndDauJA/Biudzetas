@@ -4,7 +4,7 @@ import BiudzetasPrograma.*;
 import BiudzetasPrograma.PrintAll.PrintDuomenys;
 import BiudzetasPrograma.PrintAll.PrintIslaiduIrasai;
 import BiudzetasPrograma.PrintAll.PrintPajamuIrasai;
-
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Case3 {
 
 
         while (true) {
-            System.out.println(" Pasirinkimas spausdinti: \n" +
+            print(" Pasirinkimas spausdinti: \n" +
                     "[1] Pajamu irasai, \n" +
                     "[2] Islaidu irasai, \n" +
                     "[3] Bendras informacija apie saskaitas \n" +
@@ -25,24 +25,24 @@ public class Case3 {
             int choise = scanner.nextInt();
             switch (choise) {
                 case 1:
-                    System.out.println("======Pajamu irasai======");
+                    print("======Pajamu irasai======");
                     PrintPajamuIrasai.printPajamos(biudzetas.getIrasai());
-                    System.out.println();
+                    print("");
 
                     break;
                 case 2:
-                    System.out.println("======Islaidu irasai======");
+                    print("======Islaidu irasai======");
                     PrintIslaiduIrasai.printIslaidos(biudzetas.getIrasai());
-                    System.out.println();
+                    print("");
                     break;
                 case 3:
-                    System.out.println("=======Bendra informacija saskaitoje========");
+                    print("=======Bendra informacija saskaitoje========");
                     PrintDuomenys.printBendraInfoSaskaitoje(biudzetas.getIrasai());
-                    System.out.println();
+                    print("");
                     break;
                 case 4:
-                    System.out.println("Griztame i pagrindini Meniu >>>>");
-                    System.out.println();
+                    print("Griztame i pagrindini Meniu >>>>");
+                    print("");
                     return;
             }
         }

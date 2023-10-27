@@ -3,9 +3,11 @@ package BiudzetasPrograma.PrintAll;
 import BiudzetasPrograma.Irasas;
 import BiudzetasPrograma.TotalPajamuSum;
 
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
 import java.util.ArrayList;
 
 public class PrintPajamuIrasai {
+
     public static void printPajamos(ArrayList<Irasas> irasai) {
 
         for (Irasas printPajIrasai : irasai) {

@@ -27,6 +27,17 @@ public class PrintDeleteDuomenys {
                         bendriIrasai.getPapildomaInformacija(),
                         bendriIrasai.getAtsiskaitymoBudas(),
                         bendriIrasai.getKodas());
+
+            } else if (kodas.equals("is")) {
+                System.out.printf("Irasas==> Iraso id: %s, Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+                                " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
+                        id, piniguSuma,
+                        kategorijosIndeksas,
+                        data,
+                        suvedimoLaikas,
+                        papildomaInformacija,
+                        atsiskaitymoBudas, kodas);
+
             }
         }
     }

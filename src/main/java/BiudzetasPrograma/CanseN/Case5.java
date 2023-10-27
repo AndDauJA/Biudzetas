@@ -1,42 +1,58 @@
 package BiudzetasPrograma.CanseN;
 
 import BiudzetasPrograma.Biudzetas;
+import BiudzetasPrograma.Failai.WriteFile;
+import BiudzetasPrograma.Irasas;
+import BiudzetasPrograma.IrasuKeitimas.KeistiDatosIrasa;
+import BiudzetasPrograma.IrasuKeitimas.KeistiIndeksoIrasa;
+import BiudzetasPrograma.IrasuKeitimas.KeistiSumosIrasa;
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
-import java.sql.SQLOutput;
+import java.util.List;
 import java.util.Scanner;
 
 public class Case5 {
 
-    public static void case5(Biudzetas biudzetas, Scanner scanner) {
-
-
-        System.out.println();
-        System.out.println("======== Pasirinkite juri irasa norite keisti ========");
+    public static void koreguotiIrasus(List<Irasas> irasai) {
+        Scanner scanner = new Scanner(System.in);
+        print("=== Pasirinkite irasa kuri norite Keisti? === ");
+        int irasoId = scanner.nextInt();
         while (true) {
-            System.out.println(" =====Pasirinkimas spausdinti:===== \n" +
-                    "1. Pajamu iraso keitimas \n" +
-                    "2. Islaidu iraso keitimas \n" +
-                    "3. Bendras informacija apie saskaitas \n" +
-                    "4. Exit");
-            int choise = scanner.nextInt();
-            switch (choise) {
+            print("==========Iraso korekcijos MENU==============");
+            print("1. Sumoas irasa \n 2.Kategorijos indeksa \n 3.Data \n 4.Papildoma informacija \n " +
+                    "5.Iraso suvedimo laikas \n 6.Atsiskaitymo budas \n 7.Exit to main meniu");
+            int choice = scanner.nextInt();
+            switch (choice) {
                 case 1:
-                    System.out.println("======Pajamu iraso keitimas======");
+                    print("======Pajamu iraso keitimas======");
+                    Biudzetas biudzetas=new Biudzetas();
+                    KeistiSumosIrasa.keiciamasSumosIrasas(irasai,irasoId,scanner, biudzetas);
+                    WriteFile.fileOutGoing(biudzetas.getIrasai());
                     break;
                 case 2:
-                    System.out.println("======Islaidu iraso keitimas======");
+                    print("======Islaidu iraso keitimas======");
+                    KeistiIndeksoIrasa.keiciamasIndeksoIrasas(irasai, irasoId,scanner);
                     break;
                 case 3:
-                    System.out.println("=======Bendra informacija saskaitoje========");
-                    System.out.println(biudzetas);
-                    System.out.println();
+                    print("======Datos iraso keitimas======");
+                    KeistiDatosIrasa.keiciamasDatosIrasas(irasai,irasoId,scanner);
                     break;
                 case 4:
-                    System.out.println("Griztame i pagrindini Meniu >>>>");
-                    System.out.println();
+                        //  papildyti funkcija papildomaInformacija
+                case 5:
+                        //  papildyti funkcija suvedimoLaikas
+                case 6:
+                        // papildyti funkcijas atsiskaitymoBudas
+                case 7:
+                    print("Griztame i pagrindini Meniu >>>>");
+                    print("");
                     return;
+
             }
         }
+
     }
+
 }
+
 

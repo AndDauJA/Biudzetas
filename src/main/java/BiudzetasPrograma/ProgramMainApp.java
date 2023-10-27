@@ -6,15 +6,13 @@ import BiudzetasPrograma.CanseN.Case3;
 import BiudzetasPrograma.CanseN.Case4;
 import BiudzetasPrograma.Failai.ReadFile;
 import BiudzetasPrograma.Failai.WriteFile;
-import BiudzetasPrograma.IrasuKeitimas.KeistiIrasus;
+import BiudzetasPrograma.CanseN.Case5;
 import BiudzetasPrograma.PrintAll.PrintBalansas;
-import BiudzetasPrograma.PrintAll.PrintDeleteDuomenys;
 import BiudzetasPrograma.PrintAll.PrintDuomenys;
 
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
 public class ProgramMainApp {
 
@@ -22,12 +20,11 @@ public class ProgramMainApp {
         Biudzetas biudzetas = new Biudzetas();
         ArrayList<Irasas> irasas = new ArrayList<>();
 
-
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("========Pasirinkite ka norite daryti========");
-            System.out.println("[1] Ivesti pajamas,\n" +
+            print("========Pasirinkite ka norite daryti========");
+            print("[1] Ivesti pajamas,\n" +
                     "[2] Ivesti islaidas,\n" +
                     "[3] Irasu perziura,\n" +
                     "[4] Trinti irasa,\n" +
@@ -50,28 +47,18 @@ public class ProgramMainApp {
                     print("000");
                     break;
                 case 4:
-
-                    System.out.println();
-                    System.out.println("=== Pasirinkite irasa kuri norite trinti? === ");
-                    PrintDeleteDuomenys.printDeleteData(biudzetas.getIrasai());
-                    System.out.print("Irasas Nr.: ");
-                    int idToDelete = scanner.nextInt();
-                    Case4.deleteEnteredData(biudzetas, idToDelete);
-                    WriteFile.fileOutGoing(biudzetas.getIrasai());
-                    System.out.println("Irasas " + idToDelete + " istrintas");
-                    System.out.println();
+                    Case4.deleteEnteredData(biudzetas, scanner);
                     break;
                 case 5:
                     PrintDuomenys.printBendraInfoSaskaitoje(biudzetas.getIrasai());
-                    KeistiIrasus.koreguotiIrasus(biudzetas.getIrasai());
+                    Case5.koreguotiIrasus(biudzetas.getIrasai());
                     WriteFile.fileOutGoing(biudzetas.getIrasai());
                     break;
                 case 6:
                     ReadFile.nuskaitytiIsFailo(biudzetas.getIrasai());
-                    System.out.println("------Duomenys perkelti------");
-                    System.out.println();
-                    System.out.println();
-
+                    print("------Duomenys perkelti------");
+                    print("");
+                    print("");
                     break;
                 case 7:
                     //System.out.println(biudzetas.bendrasBalansas());
@@ -79,10 +66,10 @@ public class ProgramMainApp {
                     break;
                 case 8:
 
-                    System.out.println("================================");
-                    System.out.println("======= Programa baigiama ======");
-                    System.out.println();
-                    System.out.println("Exiting ......");
+                    print("================================");
+                    print("======= Programa baigiama ======");
+                    print("");
+                    print("Exiting ......");
                     return;
 
                 case 9:

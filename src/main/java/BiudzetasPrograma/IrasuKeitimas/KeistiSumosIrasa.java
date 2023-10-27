@@ -9,10 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class KeistiSumosIrasa {
-    public static void keiciamasSumosIrasas(List<Irasas> irasai,
-                                            int irasoId,
-                                            Scanner scanner,
-                                            Biudzetas biudzetas) {
+    public static void keiciamasSumosIrasas(List<Irasas> irasai, int irasoId, Scanner scanner,Biudzetas biudzetas) {
         for (int i = 0; i < irasai.size(); i++) {
             Irasas irasas = irasai.get(i); //irasas- susikure naujas oblektas
             if (irasas.getId() == irasoId) {
@@ -22,6 +19,6 @@ public class KeistiSumosIrasa {
                 break;
             }
         }
-       //WriteFile.fileOutGoing(biudzetas.getIrasai());
+       WriteFile.fileOutGoing(biudzetas.getIrasai());
     }
 }

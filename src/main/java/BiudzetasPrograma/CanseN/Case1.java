@@ -2,7 +2,7 @@ package BiudzetasPrograma.CanseN;
 
 import BiudzetasPrograma.*;
 import BiudzetasPrograma.Failai.WriteFile;
-
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,15 +14,15 @@ public class Case1 {
 //        int id = 1;
         float pajamos = scanner.nextFloat();
         scanner.nextLine();
-        System.out.println("iveskite kategorijos indeksa");
+        print("iveskite kategorijos indeksa");
         String kategorijosIndeksas = scanner.nextLine();
-        System.out.println("iveskite data");
+        print("iveskite data");
         String localDate = scanner.nextLine();
-        System.out.println("iveskite papildoma info");
+        print("iveskite papildoma info");
         String papildomainfo = scanner.nextLine();
-        System.out.println("iveskite suvedimo laika");
+        print("iveskite suvedimo laika");
         String suvedimoLaikas = scanner.nextLine();
-        System.out.println("iveskite atsiskaitymo buda");
+        print("iveskite atsiskaitymo buda");
         String atsiskaitymoBudas = scanner.nextLine();
         String papildomasDuomuo = "p";
 
@@ -35,8 +35,8 @@ public class Case1 {
         biudzetas.pridetiPajamuIrasus(pajamuIrasai);
         WriteFile.fileOutGoing(biudzetas.getIrasai());
 
-        System.out.println("Isaugotas irasas: ");
-        System.out.println();
+        print("Isaugotas irasas: ");
+        print("");
         System.out.printf("iraso id:, Pajamos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
                         " Papildoma informacija: %s, Atsiskaitymo budas: %s, domuo %s%n",
                 pajamos,
@@ -48,9 +48,9 @@ public class Case1 {
 
         ArrayList<Irasas> irasai = biudzetas.getIrasai();
         double totalIncome = TotalPajamuSum.pajamosSum(irasai);
-        System.out.println("========Viso pajamu suma=========");
-        System.out.println("Viso pajamu: " + totalIncome + "\u20AC");
-        System.out.println("=================================");
+        print("========Viso pajamu suma=========");
+        print("Viso pajamu: " + totalIncome + "\u20AC");
+        print("=================================");
 
     }
 
