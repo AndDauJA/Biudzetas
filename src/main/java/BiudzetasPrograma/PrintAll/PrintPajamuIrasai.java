@@ -6,9 +6,9 @@ import BiudzetasPrograma.TotalPajamuSum;
 import java.util.ArrayList;
 
 public class PrintPajamuIrasai {
-    public static void printPajamos(ArrayList<Irasas> pajamuIrasas) {
+    public static void printPajamos(ArrayList<Irasas> irasai) {
 
-        for (Irasas printPajIrasai : pajamuIrasas) {
+        for (Irasas printPajIrasai : irasai) {
             int id = printPajIrasai.getId();
             double piniguSuma = printPajIrasai.getPiniguSuma();
             String kategorijosIndeksas = printPajIrasai.getKategorijosIndeksas();
@@ -30,8 +30,10 @@ public class PrintPajamuIrasai {
 
             }
         }
-        double totalIncome = TotalPajamuSum.pajamosSum(pajamuIrasas);
+        double totalIncome = TotalPajamuSum.pajamosSum(irasai);
         System.out.println();
-        System.out.println("viso pajamu: " + totalIncome + "\u20AC");
+        System.out.println("========Viso pajamu suma=========");
+        System.out.println("Viso pajamu: " + totalIncome + "\u20AC");
+        System.out.println("=================================");
     }
 }

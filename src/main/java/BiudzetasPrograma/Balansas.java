@@ -39,11 +39,11 @@ public class Balansas {
     }
 
 
-    @Override
-    public String toString() {
-        Balansas balansas=new Balansas(balansinePajamuSuma, balansineIslaiduSuma, bendrasBalansas);
-        final double result = bendrasBalansas;
-        final String formattedResult = String.format("%.2f", result);
-        return String.format(" Bendras Islaidu balansas: %s", formattedResult); //isbadyti
-    }
+//    @Override
+//    public String toString() {
+//        Balansas balansas=new Balansas(balansinePajamuSuma, balansineIslaiduSuma, bendrasBalansas);
+//        final double result = bendrasBalansas;
+//        final String formattedResult = String.format("%.2f", result);
+//        return String.format(" Bendras Islaidu balansas: %s", formattedResult); //isbadyti
+//    }
 }

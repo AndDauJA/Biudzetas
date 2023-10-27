@@ -31,6 +31,9 @@ public class PrintIslaiduIrasai {
         }
         double totalExpencess = TotalIslaiduSum.islaidosSum(islaiduIrasas);
         System.out.println();
-        System.out.println("viso islaidu: " + totalExpencess + "\u20AC");
+        System.out.println("========Viso islaidu suma========");
+        System.out.println("Viso islaidu: " + totalExpencess);
+        System.out.println("=================================");
+
     }
 }

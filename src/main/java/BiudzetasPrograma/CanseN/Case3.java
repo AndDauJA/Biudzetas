@@ -12,16 +12,16 @@ public class Case3 {
 
 
     public static void case3(Biudzetas biudzetas, Scanner scanner, ArrayList<Irasas> irasas) {
-        ArrayList<PajamuIrasai> pajamuIrasaiArrayList = new ArrayList<>();
+        //ArrayList<PajamuIrasai> pajamuIrasaiArrayList = new ArrayList<>();
         System.out.println("======== Pasirinkite is meniu ========");
 
 
         while (true) {
             System.out.println(" Pasirinkimas spausdinti: \n" +
-                    "1. Pajamu irasai, \n" +
-                    "2. Islaidu irasai, \n" +
-                    "3. Bendras informacija apie saskaitas \n" +
-                    "4. Exit");
+                    "[1] Pajamu irasai, \n" +
+                    "[2] Islaidu irasai, \n" +
+                    "[3] Bendras informacija apie saskaitas \n" +
+                    "[4] Exit");
             int choise = scanner.nextInt();
             switch (choise) {
                 case 1:

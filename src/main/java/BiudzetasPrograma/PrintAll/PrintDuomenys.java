@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class PrintDuomenys {
     public static void printBendraInfoSaskaitoje(ArrayList<Irasas> irasas) {
-        //Biudzetas biudzetas=new Biudzetas();
+
         for (Irasas bendriIrasai : irasas) {
             int id = bendriIrasai.getId();
             double piniguSuma = bendriIrasai.getPiniguSuma();
@@ -17,16 +17,17 @@ public class PrintDuomenys {
             String atsiskaitymoBudas = bendriIrasai.getAtsiskaitymoBudas();
             String kodas = bendriIrasai.getKodas();
             if (kodas.equals("p")) {
-                System.out.printf("Pajamu irasai \n Iraso id: %s, Suma pinigu: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+                System.out.printf("Pajamu irasas==> Iraso id: %s, Suma pinigu: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
                                 " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
-                        id, piniguSuma,
-                        kategorijosIndeksas,
-                        data,
-                        suvedimoLaikas,
-                        papildomaInformacija,
-                        atsiskaitymoBudas, kodas);
+                        bendriIrasai.getId(), bendriIrasai.getPiniguSuma(),
+                        bendriIrasai.getKategorijosIndeksas(),
+                        bendriIrasai.getData(),
+                        bendriIrasai.getSuvedimoLaikas(),
+                        bendriIrasai.getPapildomaInformacija(),
+                        bendriIrasai.getAtsiskaitymoBudas(),
+                        bendriIrasai.getKodas());
             } else if (kodas.equals("is")) {
-                System.out.printf("Islaidu irasai \n Iraso id: %s, Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+                System.out.printf("Islaidu irasas==> Iraso id: %s, Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
                                 " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
                         id, piniguSuma,
                         kategorijosIndeksas,

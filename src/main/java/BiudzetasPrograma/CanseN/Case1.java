@@ -38,7 +38,7 @@ public class Case1 {
         System.out.println("Isaugotas irasas: ");
         System.out.println();
         System.out.printf("iraso id:, Pajamos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
-                        " Papildoma informacija: %s, Atsiskaitymo budas: %s, domuo %s",
+                        " Papildoma informacija: %s, Atsiskaitymo budas: %s, domuo %s%n",
                 pajamos,
                 kategorijosIndeksas,
                 localDate,
@@ -48,7 +48,9 @@ public class Case1 {
 
         ArrayList<Irasas> irasai = biudzetas.getIrasai();
         double totalIncome = TotalPajamuSum.pajamosSum(irasai);
-        System.out.println("viso pajamu: " + totalIncome + "\u20AC");
+        System.out.println("========Viso pajamu suma=========");
+        System.out.println("Viso pajamu: " + totalIncome + "\u20AC");
+        System.out.println("=================================");
 
     }
 

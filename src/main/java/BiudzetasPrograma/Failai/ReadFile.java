@@ -1,5 +1,6 @@
 package BiudzetasPrograma.Failai;
 
+import BiudzetasPrograma.Biudzetas;
 import BiudzetasPrograma.Irasas;
 import BiudzetasPrograma.IslaiduIrasai;
 import BiudzetasPrograma.PajamuIrasai;
@@ -42,10 +43,8 @@ public class ReadFile {
                             tokens[7]
                     );
                 }
-
                 if (irasas != null) {
                     duomenys.add(irasas);
-
                 }
             }
             String printOut = reader.lines().toList().toString();
@@ -56,12 +55,6 @@ public class ReadFile {
             throw new RuntimeException(e);
         }
 
-
-//        } catch (FileNotFoundException ex) {
-//            throw new RuntimeException(ex);
-//        } catch (IOException ex) {
-//            throw new RuntimeException(ex);
-//
     }
 }
 

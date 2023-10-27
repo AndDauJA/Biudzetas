@@ -37,7 +37,7 @@ public class Case2 {
         System.out.println("Isaugotas irasas: ");
         System.out.println();
         System.out.printf("iraso id: %s, Suman pinigu: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
-                        " Papildoma informacija: %s, Atsiskaitymo budas: %s",
+                        " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
                 id, islaidos,
                 kategorijosIndeksas,
                 localDate,
@@ -46,7 +46,9 @@ public class Case2 {
                 atsiskaitymoBudas);
 
         ArrayList<Irasas> irasai = biudzetas.getIrasai();
-        double totalExpence = TotalIslaiduSum.islaidosSum(irasai);
-        System.out.println("viso islaidu: " + totalExpence);
+        double totalExpencess = TotalIslaiduSum.islaidosSum(irasai);
+        System.out.println("========Viso islaidu suma========");
+        System.out.println("Viso islaidu: " + totalExpencess);
+        System.out.println("=================================");
     }
 }

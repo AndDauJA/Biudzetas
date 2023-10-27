@@ -6,13 +6,7 @@ public class Biudzetas {
 
     private final ArrayList<PajamuIrasai> pajamuIrasai;
     private final ArrayList<IslaiduIrasai> islaiduIrasai;
-
     private final ArrayList<Irasas> irasai;
-
-
-    public ArrayList<Irasas> getIrasai() {
-        return irasai;
-    }
 
     public Biudzetas() {
         this.irasai = new ArrayList<>();
@@ -20,7 +14,9 @@ public class Biudzetas {
         this.islaiduIrasai = new ArrayList<>();
 
     }
-
+    public ArrayList<Irasas> getIrasai() {
+        return irasai;
+    }
 
     public void pridetiIrasus(Irasas irasas) {      //bendras metodas prideti irasa
 
@@ -74,7 +70,7 @@ public class Biudzetas {
 
     public double bendrasBalansas() {
         double result;
-        result = totalPajamos() + totalIslaidu(); // pakestas
+        result = totalPajamos() + totalIslaidu(); // pakeistas
         return result;
     }
 

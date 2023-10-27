@@ -7,6 +7,8 @@ import BiudzetasPrograma.CanseN.Case4;
 import BiudzetasPrograma.Failai.ReadFile;
 import BiudzetasPrograma.Failai.WriteFile;
 import BiudzetasPrograma.IrasuKeitimas.KeistiIrasus;
+import BiudzetasPrograma.PrintAll.PrintBalansas;
+import BiudzetasPrograma.PrintAll.PrintDeleteDuomenys;
 import BiudzetasPrograma.PrintAll.PrintDuomenys;
 
 import java.util.ArrayList;
@@ -25,14 +27,14 @@ public class ProgramMainApp {
 
         while (true) {
             System.out.println("========Pasirinkite ka norite daryti========");
-            System.out.println("1.Ivesti pajamas,\n " +
-                    "2.Ivesti islaidas,\n" +
-                    "3.Irasu perziura,\n " +
-                    "4.Trinti irasa, \n" +
-                    "5.Keisti irasus, \n" +
-                    "6.Paimti is failo informacija, \n" +
-                    "7. Balansas,\n" +
-                    "8.Pabaigti programa\n");
+            System.out.println("[1] Ivesti pajamas,\n" +
+                    "[2] Ivesti islaidas,\n" +
+                    "[3] Irasu perziura,\n" +
+                    "[4] Trinti irasa,\n" +
+                    "[5] Keisti irasus,\n" +
+                    "[6] Paimti is failo informacija,\n" +
+                    "[7]  Balansas,\n" +
+                    "[8] Pabaigti programa\n");
             int choice = scanner.nextInt();
             switch (choice) {
 
@@ -48,13 +50,15 @@ public class ProgramMainApp {
                     print("000");
                     break;
                 case 4:
-                    System.out.println(biudzetas);
+
                     System.out.println();
                     System.out.println("=== Pasirinkite irasa kuri norite trinti? === ");
+                    PrintDeleteDuomenys.printDeleteData(biudzetas.getIrasai());
+                    System.out.print("Irasas Nr.: ");
                     int idToDelete = scanner.nextInt();
-                    Case4.deleteEnteredData(biudzetas.getIrasai(), idToDelete);
+                    Case4.deleteEnteredData(biudzetas, idToDelete);
                     WriteFile.fileOutGoing(biudzetas.getIrasai());
-                    System.out.println("Irasas " + "idToDelete" + " istrintas");
+                    System.out.println("Irasas " + idToDelete + " istrintas");
                     System.out.println();
                     break;
                 case 5:
@@ -70,7 +74,8 @@ public class ProgramMainApp {
 
                     break;
                 case 7:
-                    System.out.println(biudzetas.bendrasBalansas());
+                    //System.out.println(biudzetas.bendrasBalansas());
+                    PrintBalansas.printBalansoduomenys(biudzetas);
                     break;
                 case 8:
 
