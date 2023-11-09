@@ -4,39 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef7d1d25-ee8c-4dc3-84c7-7f6edcc6053e" name="Changes" comment="Budzetas v3/1: problema sutvarkyta, nebuvo IF, sutvarkytas Case5">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="3f4d197b-c702-41ba-a517-f0e63862e319" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Case4DeleteIrasas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/IrasuKeitimas/IrasoKeitimas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/PrintDuomenys.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Irasai.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/AtnaujintiDuomenis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/Balansas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/Biudzetas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Bandymai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Case1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Case2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Case3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Case4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Case5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/Failai/PakeistiWriteToFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/Failai/ReadFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/Failai/WriteFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/Failai/WriteFileSerealizacija.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/Irasas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/IrasuKeitimas/KeistiDatosIrasa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/IrasuKeitimas/KeistiIndeksoIrasa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/IrasuKeitimas/KeistiIrasus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/IrasuKeitimas/KeistiSumosIrasa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/IslaiduIrasai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/PajamuIrasai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/PrintAll/PrintDuomenys.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/PrintAll/PrintLn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/ProgramMainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/TotalIslaiduSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/TotalPajamuSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Failai/PakeistiWriteToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Failai/PakeistiWriteToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Failai/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Failai/ReadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Failai/WriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Failai/WriteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Irasas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Irasas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/IslaiduIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/IslaiduIrasai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PajamuIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PajamuIrasai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintDeleteDuomenys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintDeleteDuomenys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintDuomenys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintDuomenys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Biudzetas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Biudzetas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/IrasuKeitimas/KeistiSumosIrasa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/IrasuKeitimas/KeistiSumosIrasa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/ProgramMainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/ProgramMainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/CanseN/Case5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Failai/PakeistiWriteToFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Failai/PakeistiWriteToFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Failai/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Failai/ReadFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Failai/WriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Failai/WriteFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Irasas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/Irasas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/IrasuKeitimas/KeistiIrasus.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/IrasuKeitimas/KeistiSumosIrasa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/IrasuKeitimas/KeistiSumosIrasa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/IslaiduIrasai.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/IslaiduIrasai.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PajamuIrasai.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PajamuIrasai.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PrintAll/PrintDuomenys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PrintAll/PrintDuomenys.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/ProgramMainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BiudzetasPrograma/ProgramMainApp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +79,7 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2XKkn7GfzNhGlRToRUzCHjJBTM6" />
+  <component name="ProjectId" id="2XfYw60Vy8w9LEgHXNP0GgUGMGA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -71,65 +89,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "last_opened_file_path": "D:/JAVA/Advanced/BIUDZETASv2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ef7d1d25-ee8c-4dc3-84c7-7f6edcc6053e" name="Changes" comment="" />
-      <created>1698385324588</created>
+      <changelist id="3f4d197b-c702-41ba-a517-f0e63862e319" name="Changes" comment="" />
+      <created>1699021838361</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698385324588</updated>
+      <updated>1699021838361</updated>
     </task>
-    <task id="LOCAL-00001" summary="Budzetas v3: sutvarkyta failu struktura">
-      <option name="closed" value="true" />
-      <created>1698389065979</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698389065979</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Budzetas v3: Su problema: sudedu is failo 3 eilutes info, dirbti leidzia, bet kai noriu istrinti irasa rodo tik 1 eilute kuria galiu trinti.">
-      <option name="closed" value="true" />
-      <created>1698397709004</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698397709004</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Budzetas v3/1: problema sutvarkyta, nebuvo IF, sutvarkytas Case5">
-      <option name="closed" value="true" />
-      <created>1698405871445</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1698405871445</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Budzetas v3: sutvarkyta failu struktura" />
-    <MESSAGE value="Budzetas v3: Su problema: sudedu is failo 3 eilutes info, dirbti leidzia, bet kai noriu istrinti irasa rodo tik 1 eilute kuria galiu trinti." />
-    <MESSAGE value="Budzetas v3/1: problema sutvarkyta, nebuvo IF, sutvarkytas Case5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Budzetas v3/1: problema sutvarkyta, nebuvo IF, sutvarkytas Case5" />
   </component>
 </project>

@@ -8,12 +8,13 @@ import BiudzetasPrograma.IrasuKeitimas.KeistiIndeksoIrasa;
 import BiudzetasPrograma.IrasuKeitimas.KeistiSumosIrasa;
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Case5 {
 
-    public static void koreguotiIrasus(List<Irasas> irasai) {
+    public static void koreguotiIrasus(List<Irasas> irasai) throws IOException {
         Scanner scanner = new Scanner(System.in);
         print("=== Pasirinkite irasa kuri norite Keisti? === ");
         int irasoId = scanner.nextInt();

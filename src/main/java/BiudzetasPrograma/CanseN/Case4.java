@@ -7,10 +7,12 @@ import BiudzetasPrograma.PrintAll.PrintDeleteDuomenys;
 import BiudzetasPrograma.PrintAll.PrintLn;
 import BiudzetasPrograma.ProgramMainApp;
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
+
+import java.io.IOException;
 import java.util.Scanner;
 public class Case4 {
 
-    public static void deleteEnteredData(Biudzetas biudzetas, Scanner scanner) {
+    public static void deleteEnteredData(Biudzetas biudzetas, Scanner scanner) throws IOException {
         print("");
         print("=== Pasirinkite irasa kuri norite trinti? === ");
         PrintDeleteDuomenys.printDeleteData(biudzetas.getIrasai());

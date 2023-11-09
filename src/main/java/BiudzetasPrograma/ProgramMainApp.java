@@ -11,12 +11,15 @@ import BiudzetasPrograma.PrintAll.PrintBalansas;
 import BiudzetasPrograma.PrintAll.PrintDuomenys;
 
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ProgramMainApp {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
         Biudzetas biudzetas = new Biudzetas();
         ArrayList<Irasas> irasas = new ArrayList<>();
 
@@ -38,13 +41,14 @@ public class ProgramMainApp {
                 case 1:
                     Case1.case1(biudzetas, scanner);
 
+
                     break;
                 case 2:
                     Case2.case2(biudzetas, scanner);
                     break;
                 case 3:
                     Case3.case3(biudzetas, scanner, irasas);
-                    print("000");
+
                     break;
                 case 4:
                     Case4.deleteEnteredData(biudzetas, scanner);
@@ -53,6 +57,7 @@ public class ProgramMainApp {
                     PrintDuomenys.printBendraInfoSaskaitoje(biudzetas.getIrasai());
                     Case5.koreguotiIrasus(biudzetas.getIrasai());
                     WriteFile.fileOutGoing(biudzetas.getIrasai());
+
                     break;
                 case 6:
                     ReadFile.nuskaitytiIsFailo(biudzetas.getIrasai());

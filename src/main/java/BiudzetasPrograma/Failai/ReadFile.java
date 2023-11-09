@@ -18,18 +18,18 @@ public class ReadFile {
 
     public static void nuskaitytiIsFailo(ArrayList<Irasas> duomenys) {
         try {
-            var reader = new BufferedReader(new FileReader("./src/Irasai.txt"));
+            var reader = new BufferedReader(new FileReader("./src/main/java/BiudzetasPrograma/Irasai.txt")); //1 funkcija
 
             String line;
-            while ((line = reader.readLine()) != null) {
-                String[] tokens = line.split(",");
+            while ((line = reader.readLine()) != null) {// 1 funkcija
+                String[] tokens = line.split(",");  // 1 funkcija
                 if (tokens.length < 8) {
                     System.err.println("Invalid line: " + line);
                     continue;
                 }
                 Irasas irasas = null;
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-                try {
+                try {                                                   // 2 funkcija
                     LocalDate date = LocalDate.parse(tokens[3], formatter);
 
                     if (line != null && line.contains("p")) {

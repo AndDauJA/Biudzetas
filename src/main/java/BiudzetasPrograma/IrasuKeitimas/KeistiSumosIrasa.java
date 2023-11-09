@@ -5,11 +5,12 @@ import BiudzetasPrograma.Failai.PakeistiWriteToFile;
 import BiudzetasPrograma.Failai.WriteFile;
 import BiudzetasPrograma.Irasas;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
 public class KeistiSumosIrasa {
-    public static void keiciamasSumosIrasas(List<Irasas> irasai, int irasoId, Scanner scanner,Biudzetas biudzetas) {
+    public static void keiciamasSumosIrasas(List<Irasas> irasai, int irasoId, Scanner scanner,Biudzetas biudzetas) throws IOException {
         for (int i = 0; i < irasai.size(); i++) {
             Irasas irasas = irasai.get(i); //irasas- susikure naujas oblektas
             if (irasas.getId() == irasoId) {

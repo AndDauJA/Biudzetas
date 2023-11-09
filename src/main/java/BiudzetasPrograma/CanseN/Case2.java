@@ -4,13 +4,14 @@ import BiudzetasPrograma.*;
 import BiudzetasPrograma.Failai.WriteFile;
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Case2 {
 
-    public static void case2(Biudzetas biudzetas, Scanner scanner) {
+    public static void case2(Biudzetas biudzetas, Scanner scanner) throws IOException {
         System.out.println("iveskite islaidas: ");
 
         //int id = 0;

@@ -4,13 +4,14 @@ import BiudzetasPrograma.*;
 import BiudzetasPrograma.Failai.WriteFile;
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Case1 {
 
-    public static void case1(Biudzetas biudzetas, Scanner scanner) {
+    public static void case1(Biudzetas biudzetas, Scanner scanner) throws IOException {
        // WriteFile faileOut = new WriteFile();
         System.out.println("iveskite pajamas: ");
         //int id = 0;
