@@ -3,6 +3,8 @@ package BiudzetasPrograma.PrintAll;
 import BiudzetasPrograma.Irasas;
 import BiudzetasPrograma.TotalIslaiduSum;
 
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -31,10 +33,10 @@ public class PrintIslaiduIrasai {
             }
         }
         double totalExpencess = TotalIslaiduSum.islaidosSum(islaiduIrasas);
-        System.out.println();
-        System.out.println("========Viso islaidu suma========");
-        System.out.println("Viso islaidu: " + totalExpencess);
-        System.out.println("=================================");
+        print("");
+        print("========Viso islaidu suma========");
+        print("Viso islaidu: " + totalExpencess);
+        print("=================================");
 
     }
 }

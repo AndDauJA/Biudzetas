@@ -1,22 +1,18 @@
 package BiudzetasPrograma.PrintAll;
 
 import BiudzetasPrograma.Biudzetas;
-import BiudzetasPrograma.Irasas;
-import BiudzetasPrograma.IslaiduIrasai;
 
-import javax.crypto.spec.PSource;
-import java.util.ArrayList;
-import java.util.List;
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
 public class PrintBalansas {
 
     public static void printBalansoduomenys(Biudzetas biudzetas) {
 
         var bendraSuma = biudzetas.bendrasBalansas();
-        System.out.println("======== Blanso ataskaita========");
-        System.out.println("Viso saskaitoje pinigu: " + bendraSuma);
-        System.out.println("=================================");
-        System.out.println();
+        print("======== Blanso ataskaita========");
+        print("Viso saskaitoje pinigu: " + bendraSuma);
+        print("=================================");
+        print("");
 
     }
 

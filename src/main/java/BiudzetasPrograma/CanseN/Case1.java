@@ -39,7 +39,7 @@ public class Case1 {
                 localDate,papildomainfo, suvedimoLaikas, atsiskaitymoBudas, papildomasDuomuo);
         biudzetas.pridetiIrasus(pajamuIrasai); //prideda irasus i duombaze ArrayList<Irasai>
         biudzetas.pridetiPajamuIrasus(pajamuIrasai);
-        WriteFile.fileOutGoing(biudzetas.getIrasai());
+        WriteFile.fileOutGoing(biudzetas.getPajamuIrasai());
 
         print("Isaugotas irasas: ");
         print("");

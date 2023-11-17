@@ -1,11 +1,15 @@
 package BiudzetasPrograma;
 
+import BiudzetasPrograma.PrintAll.TotalSumsCalculation;
+import lombok.Getter;
+
 import java.util.ArrayList;
 
 public class Biudzetas {
 
     private final ArrayList<PajamuIrasai> pajamuIrasai;
     private final ArrayList<IslaiduIrasai> islaiduIrasai;
+    @Getter
     private final ArrayList<Irasas> irasai;
 
     public Biudzetas() {
@@ -13,9 +17,6 @@ public class Biudzetas {
         this.pajamuIrasai = new ArrayList<>();
         this.islaiduIrasai = new ArrayList<>();
 
-    }
-    public ArrayList<Irasas> getIrasai() {
-        return irasai;
     }
 
     public void pridetiIrasus(Irasas irasas) {      //bendras metodas prideti irasa
@@ -38,19 +39,19 @@ public class Biudzetas {
 
     }
 
-    public ArrayList<PajamuIrasai> getPajamuIrasai() {
+    public ArrayList<Irasas> getPajamuIrasai() {
         // loop +instance of pajamu irasai
 
-        return pajamuIrasai;
+        return irasai;
     }
 
-    public ArrayList<IslaiduIrasai> getIslaiduIrasai() {
-        return islaiduIrasai;
+    public ArrayList<Irasas> getIslaiduIrasai() {
+        return irasai;
     }
 
     public double totalPajamos() {
-        //double result = 0.0;
-        var result=TotalPajamuSum.pajamosSum(irasai);
+       var result= TotalSumsCalculation.totalSum(getPajamuIrasai());
+        //var result=TotalPajamuSum.pajamosSum(irasai);
 //        for (PajamuIrasai pajamuSuma : pajamuIrasai) {
 //            double pajamos = pajamuSuma.getPiniguSuma();
 //            result += pajamos;
@@ -59,8 +60,8 @@ public class Biudzetas {
     }
 
     public double totalIslaidu() {
-        //double result = 0.0;
-        var result=TotalIslaiduSum.islaidosSum(irasai);
+        var result= TotalSumsCalculation.totalSum(getIslaiduIrasai());
+        //var result=TotalIslaiduSum.islaidosSum(irasai);
 //        for (IslaiduIrasai islaiduSuma : islaiduIrasai) {
 //            double islaidos = islaiduSuma.getPiniguSuma();
 //            result += islaidos;

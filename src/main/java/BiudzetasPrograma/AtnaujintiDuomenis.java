@@ -1,14 +1,14 @@
 package BiudzetasPrograma;
 
-import BiudzetasPrograma.Failai.WriteFile;
 
-import java.util.ArrayList;
+import static BiudzetasPrograma.PrintAll.PrintLn.print;
+
 
 public class AtnaujintiDuomenis {
 
     public static void atnaujintiDuomenuFaila() {
 
-        System.out.println();
+        print("");
         //WriteFile.fileOutGoing(irasai);
     }
 

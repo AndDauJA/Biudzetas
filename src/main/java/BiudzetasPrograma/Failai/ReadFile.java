@@ -18,7 +18,7 @@ public class ReadFile {
 
     public static void nuskaitytiIsFailo(ArrayList<Irasas> duomenys) {
         try {
-            var reader = new BufferedReader(new FileReader("./src/main/java/BiudzetasPrograma/Irasai.txt")); //1 funkcija
+            var reader = new BufferedReader(new FileReader("./src/main/files/Irasai.txt")); //1 funkcija
 
             String line;
             while ((line = reader.readLine()) != null) {// 1 funkcija
