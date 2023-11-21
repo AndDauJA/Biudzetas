@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 public class PajamuIrasai extends Irasas {
     private static  LocalDate data;
-    String kodasPajama = "p";
+    //String kodasPajama = "p";
 
     public PajamuIrasai(double piniguSuma,
                         String kategorijosIndeksas,

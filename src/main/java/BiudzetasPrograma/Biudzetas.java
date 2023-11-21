@@ -1,7 +1,6 @@
 package BiudzetasPrograma;
 
 import BiudzetasPrograma.PrintAll.TotalSumsCalculation;
-import lombok.Getter;
 
 import java.util.ArrayList;
 
@@ -9,7 +8,6 @@ public class Biudzetas {
 
     private final ArrayList<PajamuIrasai> pajamuIrasai;
     private final ArrayList<IslaiduIrasai> islaiduIrasai;
-    @Getter
     private final ArrayList<Irasas> irasai;
 
     public Biudzetas() {
@@ -17,6 +15,10 @@ public class Biudzetas {
         this.pajamuIrasai = new ArrayList<>();
         this.islaiduIrasai = new ArrayList<>();
 
+    }
+
+    public ArrayList<Irasas> getIrasai() {
+        return irasai;
     }
 
     public void pridetiIrasus(Irasas irasas) {      //bendras metodas prideti irasa
@@ -39,39 +41,31 @@ public class Biudzetas {
 
     }
 
-    public ArrayList<Irasas> getPajamuIrasai() {
+    public ArrayList<PajamuIrasai> getPajamuIrasai() {
         // loop +instance of pajamu irasai
 
-        return irasai;
+        return pajamuIrasai;
     }
 
-    public ArrayList<Irasas> getIslaiduIrasai() {
-        return irasai;
+    public ArrayList<IslaiduIrasai> getIslaiduIrasai() {
+        return islaiduIrasai;
     }
 
     public double totalPajamos() {
-       var result= TotalSumsCalculation.totalSum(getPajamuIrasai());
-        //var result=TotalPajamuSum.pajamosSum(irasai);
-//        for (PajamuIrasai pajamuSuma : pajamuIrasai) {
-//            double pajamos = pajamuSuma.getPiniguSuma();
-//            result += pajamos;
-//        }
+        String papildomasKodas = "p";
+        var result = TotalSumsCalculation.totalSum(irasai, papildomasKodas);
         return result;
     }
 
     public double totalIslaidu() {
-        var result= TotalSumsCalculation.totalSum(getIslaiduIrasai());
-        //var result=TotalIslaiduSum.islaidosSum(irasai);
-//        for (IslaiduIrasai islaiduSuma : islaiduIrasai) {
-//            double islaidos = islaiduSuma.getPiniguSuma();
-//            result += islaidos;
-//        }
+        String papildomasKodas = "is";
+        var result = TotalSumsCalculation.totalSum(irasai, papildomasKodas);
         return result;
     }
 
     public double bendrasBalansas() {
         double result;
-        result = totalPajamos() + totalIslaidu(); // pakeistas
+        result = totalPajamos() + totalIslaidu();
         return result;
     }
 

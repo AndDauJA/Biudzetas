@@ -2,6 +2,8 @@ package BiudzetasPrograma.CanseN;
 
 import BiudzetasPrograma.*;
 import BiudzetasPrograma.Failai.WriteFile;
+import BiudzetasPrograma.PrintAll.TotalSumsCalculation;
+
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
 import java.io.IOException;
@@ -39,7 +41,7 @@ public class Case1 {
                 localDate,papildomainfo, suvedimoLaikas, atsiskaitymoBudas, papildomasDuomuo);
         biudzetas.pridetiIrasus(pajamuIrasai); //prideda irasus i duombaze ArrayList<Irasai>
         biudzetas.pridetiPajamuIrasus(pajamuIrasai);
-        WriteFile.fileOutGoing(biudzetas.getPajamuIrasai());
+        WriteFile.fileOutGoing(biudzetas.getIrasai());
 
         print("Isaugotas irasas: ");
         print("");
@@ -53,7 +55,7 @@ public class Case1 {
                 atsiskaitymoBudas,"p");
 
         ArrayList<Irasas> irasai = biudzetas.getIrasai();
-        double totalIncome = TotalPajamuSum.pajamosSum(irasai);
+        double totalIncome = TotalSumsCalculation.totalSum(irasai,papildomasDuomuo);
         print("========Viso pajamu suma=========");
         print("Viso pajamu: " + totalIncome + "\u20AC");
         print("=================================");

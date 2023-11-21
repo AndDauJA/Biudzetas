@@ -1,7 +1,6 @@
 package BiudzetasPrograma.PrintAll;
 
 import BiudzetasPrograma.Irasas;
-import BiudzetasPrograma.TotalIslaiduSum;
 
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
 
@@ -10,7 +9,7 @@ import java.util.ArrayList;
 
 public class PrintIslaiduIrasai {
     public static void printIslaidos(ArrayList<Irasas> islaiduIrasas) {
-
+        String kodoZenklas = "is";
         for (Irasas printIslIrasai : islaiduIrasas) {
             int id = printIslIrasai.getId();
             double piniguSuma = printIslIrasai.getPiniguSuma();
@@ -20,7 +19,7 @@ public class PrintIslaiduIrasai {
             String papildomaInformacija = printIslIrasai.getPapildomaInformacija();
             String atsiskaitymoBudas = printIslIrasai.getAtsiskaitymoBudas();
             String kodas = printIslIrasai.getKodas();
-            String kodoZenklas = "is";
+
             if (kodas.equals(kodoZenklas)) {
                 System.out.printf("iraso id: %s, Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
                                 " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
@@ -32,7 +31,8 @@ public class PrintIslaiduIrasai {
                         atsiskaitymoBudas);
             }
         }
-        double totalExpencess = TotalIslaiduSum.islaidosSum(islaiduIrasas);
+
+        double totalExpencess=TotalSumsCalculation.totalSum(islaiduIrasas,kodoZenklas);
         print("");
         print("========Viso islaidu suma========");
         print("Viso islaidu: " + totalExpencess);
