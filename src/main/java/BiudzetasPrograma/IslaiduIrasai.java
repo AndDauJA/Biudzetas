@@ -3,8 +3,8 @@ package BiudzetasPrograma;
 import java.time.LocalDate;
 
 public class IslaiduIrasai extends Irasas {
-    private LocalDate data;
-    //String kodasIslaida = "is";
+    private final LocalDate data;
+
 
     public IslaiduIrasai(double piniguSuma,
                          String kategorijosIndeksas,

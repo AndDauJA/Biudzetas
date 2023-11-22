@@ -41,15 +41,15 @@ public class Biudzetas {
 
     }
 
-    public ArrayList<PajamuIrasai> getPajamuIrasai() {
-        // loop +instance of pajamu irasai
-
-        return pajamuIrasai;
-    }
-
-    public ArrayList<IslaiduIrasai> getIslaiduIrasai() {
-        return islaiduIrasai;
-    }
+//    public ArrayList<PajamuIrasai> getPajamuIrasai() {
+//        // loop +instance of pajamu irasai
+//
+//        return pajamuIrasai;
+//    }
+//
+//    public ArrayList<IslaiduIrasai> getIslaiduIrasai() {
+//        return islaiduIrasai;
+//    }
 
     public double totalPajamos() {
         String papildomasKodas = "p";

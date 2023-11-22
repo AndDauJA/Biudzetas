@@ -3,11 +3,12 @@ package BiudzetasPrograma;
 import lombok.Getter;
 
 import java.time.LocalDate;
+
 @Getter
 
 public class PajamuIrasai extends Irasas {
-    private static  LocalDate data;
-    //String kodasPajama = "p";
+    private final LocalDate data;
+
 
     public PajamuIrasai(double piniguSuma,
                         String kategorijosIndeksas,
@@ -23,7 +24,7 @@ public class PajamuIrasai extends Irasas {
                 suvedimoLaikas,
                 atsiskaitymoBudas, kodas);
 
-
+        this.data = data;
     }
 
 

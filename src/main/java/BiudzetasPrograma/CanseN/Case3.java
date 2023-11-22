@@ -2,8 +2,7 @@ package BiudzetasPrograma.CanseN;
 
 import BiudzetasPrograma.*;
 import BiudzetasPrograma.PrintAll.PrintDuomenys;
-import BiudzetasPrograma.PrintAll.PrintIslaiduIrasai;
-import BiudzetasPrograma.PrintAll.PrintPajamuIrasai;
+import BiudzetasPrograma.PrintAll.PrintPiniguIrasai;
 import static BiudzetasPrograma.PrintAll.PrintLn.print;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -14,7 +13,8 @@ public class Case3 {
     public static void case3(Biudzetas biudzetas, Scanner scanner, ArrayList<Irasas> irasas) {
         //ArrayList<PajamuIrasai> pajamuIrasaiArrayList = new ArrayList<>();
         System.out.println("======== Pasirinkite is meniu ========");
-
+        String papildomasPajamuKodas="p";
+        String papildomasIslaiduKodas="is";
 
         while (true) {
             print(" Pasirinkimas spausdinti: \n" +
@@ -26,13 +26,23 @@ public class Case3 {
             switch (choise) {
                 case 1:
                     print("======Pajamu irasai======");
-                    PrintPajamuIrasai.printPajamos(biudzetas.getIrasai());
-                    print("");
+                    PrintPiniguIrasai.printPinuguSuma(biudzetas.getIrasai(),papildomasPajamuKodas);
 
+                    print("");
+                    double pajamos = PrintPiniguIrasai.totalIncomeCalculation(biudzetas.getIrasai(),papildomasPajamuKodas);
+                    print("========Viso pajamu suma=========");
+                    print("Viso pajamu: " + pajamos + "\u20AC");
+                    print("=================================");
+                    print("");
                     break;
                 case 2:
                     print("======Islaidu irasai======");
-                    PrintIslaiduIrasai.printIslaidos(biudzetas.getIrasai());
+                    PrintPiniguIrasai.printPinuguSuma(biudzetas.getIrasai(),papildomasIslaiduKodas);
+                    print("");
+                    double islaidos = PrintPiniguIrasai.totalIncomeCalculation(biudzetas.getIrasai(),papildomasIslaiduKodas);
+                    print("========Viso islaidu suma=========");
+                    print("Viso islaidu: " + islaidos + "\u20AC");
+                    print("=================================");
                     print("");
                     break;
                 case 3:

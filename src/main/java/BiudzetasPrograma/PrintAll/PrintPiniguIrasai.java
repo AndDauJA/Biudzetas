@@ -2,14 +2,12 @@ package BiudzetasPrograma.PrintAll;
 
 import BiudzetasPrograma.Irasas;
 
-import static BiudzetasPrograma.PrintAll.PrintLn.print;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class PrintPajamuIrasai {
-    public static void printPajamos(ArrayList<Irasas> pajamuIasai) {
-        String kodoZenklas = "p";
+public class PrintPiniguIrasai {
+    public static void printPinuguSuma(ArrayList<Irasas> pajamuIasai, String papildomasKodas) {
+//        String kodoZenklas = "p";
         for (Irasas printPajIrasai : pajamuIasai) {
             int id = printPajIrasai.getId();
             double piniguSuma = printPajIrasai.getPiniguSuma();
@@ -20,8 +18,8 @@ public class PrintPajamuIrasai {
             String atsiskaitymoBudas = printPajIrasai.getAtsiskaitymoBudas();
             String kodas = printPajIrasai.getKodas();
 
-            if (kodas.equals(kodoZenklas)) {
-                System.out.printf("iraso id: %s, Pajamos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
+            if (kodas.equals(papildomasKodas)) {
+                System.out.printf("iraso id: %s, Pajamos/Islaidos: %s\u20AC, kategorija: %s, Data:%s, Suvedimo laikas: %s," +
                                 " Papildoma informacija: %s, Atsiskaitymo budas: %s%n",
                         id, piniguSuma,
                         kategorijosIndeksas,
@@ -31,10 +29,15 @@ public class PrintPajamuIrasai {
                         atsiskaitymoBudas);
             }
         }
-        double totalIncome=TotalSumsCalculation.totalSum(pajamuIasai,kodoZenklas);
-        print("");
-        print("========Viso pajamu suma=========");
-        print("Viso pajamu: " + totalIncome + "\u20AC");
-        print("=================================");
+
+        //totalIncomeCalculation(pajamuIasai, papildomasKodas);
+    }
+
+    public static double totalIncomeCalculation(ArrayList<Irasas> pajamuIasai, String papildomasKodas) {
+        //        print("");
+//        print("========Viso pajamu suma=========");
+//        print("Viso pajamu: " + totalIncome + "\u20AC");
+//        print("=================================");
+        return TotalSumsCalculation.totalSum(pajamuIasai, papildomasKodas);
     }
 }

@@ -1,0 +1,28 @@
+[ {
+  "id" : 0,
+  "piniguSuma" : 9999.0,
+  "kategorijosIndeksas" : "",
+  "data" : [ 2023, 12, 2 ],
+  "suvedimoLaikas" : "",
+  "atsiskaitymoBudas" : "",
+  "papildomaInformacija" : "2023-12-02",
+  "kodas" : "p"
+}, {
+  "id" : 1,
+  "piniguSuma" : -8888.0,
+  "kategorijosIndeksas" : "",
+  "data" : [ 2022, 12, 12 ],
+  "suvedimoLaikas" : "",
+  "atsiskaitymoBudas" : "",
+  "papildomaInformacija" : "2022-12-12",
+  "kodas" : "is"
+}, {
+  "id" : 2,
+  "piniguSuma" : -9898.0,
+  "kategorijosIndeksas" : "",
+  "data" : [ 2023, 2, 2 ],
+  "suvedimoLaikas" : "",
+  "atsiskaitymoBudas" : "",
+  "papildomaInformacija" : "",
+  "kodas" : "is"
+} ]

@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b8d17f6-1ce8-4ada-b338-d27faa853af3" name="Changes" comment="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda">
-      <change afterPath="$PROJECT_DIR$/src/main/java/readBankDok.java" afterDir="false" />
+    <list default="true" id="7b8d17f6-1ce8-4ada-b338-d27faa853af3" name="Changes" comment="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda TotalSumCalculation naudojant kiekvienu atveju kita filterCriteria.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/CanseN/Case4DeleteIrasas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/IrasuKeitimas/IrasoKeitimas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BiudzetasV2/BiudzetasPrograma/PrintDuomenys.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/files/Irasai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/files/Irasai.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Balansas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Balansas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Biudzetas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/Biudzetas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/CanseN/Case3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/IslaiduIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/IslaiduIrasai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PajamuIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PajamuIrasai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintIslaiduIrasai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/TotalSumsCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/TotalSumsCalculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/TotalIslaiduSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BiudzetasPrograma/TotalIslaiduSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +98,8 @@
       <workItem from="1700239698582" duration="369000" />
       <workItem from="1700240089536" duration="598000" />
       <workItem from="1700487764049" duration="1574000" />
-      <workItem from="1700572968013" duration="7194000" />
+      <workItem from="1700572968013" duration="7961000" />
+      <workItem from="1700652644711" duration="2205000" />
     </task>
     <task id="LOCAL-00001" summary="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda">
       <option name="closed" value="true" />
@@ -116,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700233737070</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda TotalSumCalculation naudojant kiekvienu atveju kita filterCriteria.">
+      <option name="closed" value="true" />
+      <created>1700581558244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700581558244</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,26 +126,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/PrintPajamuIrasai.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/BiudzetasPrograma/PrintAll/TotalSumsCalculation.java</url>
-          <line>10</line>
-          <properties class="BiudzetasPrograma.PrintAll.TotalSumsCalculation" method="totalSum">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda TotalSumCalculation naudojant kiekvienu atveju kita filterCriteria." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pakeista TotalPajamuSum ir TotalIslaiduSum pgal Generic i viena metoda TotalSumCalculation naudojant kiekvienu atveju kita filterCriteria." />
   </component>
 </project>
